@@ -8,10 +8,36 @@
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "description": "A comprehensive, strongly typed Node.js wrapper for the WhatsApp Business Cloud API. Supports Messaging (Text, Media, Templates), Webhooks, Automation, Flows, E-Commerce/Catalogs, QR Codes, and Analytics. Perfect for building chatbots and marketing automation tools.",
+  "keywords": [
+    "whatsapp",
+    "whatsapp-business",
+    "whatsapp-cloud-api",
+    "whatsapp-api",
+    "meta",
+    "facebook",
+    "messaging",
+    "chatbot",
+    "automation",
+    "typescript",
+    "nodejs",
+    "sdk",
+    "marketing",
+    "notifications",
+    "e-commerce",
+    "catalog",
+    "webhooks"
+  ],
+  "author": "TechLift Digital",
   "license": "ISC",
-  "description": "",
+  "homepage": "https://github.com/techliftdigital/whatsapp-business#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techliftdigital/whatsapp-business.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techliftdigital/whatsapp-business/issues"
+  },
   "dependencies": {
     "axios": "^1.13.2",
     "form-data": "^4.0.5"
