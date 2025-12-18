@@ -1,13 +1,15 @@
-# WhatsApp Business API Wrapper
+# WhatsApp Business API Wrapper (Unofficial)
+
+> **Disclaimer**: This library is an **unofficial** third-party wrapper for the WhatsApp Business Cloud API. It is not endorsed, sponsored, affiliated with, or provided by Meta Platforms, Inc. or WhatsApp LLC. "WhatsApp" is a registered trademark of WhatsApp LLC.
 
 A complete, typed Node.js wrapper for the WhatsApp Business API, supporting Messaging, Media, Templates, Analytics, Webhooks, Flows, E-Commerce, QR Codes, and BSP/Partner Features.
 
 ## Installation
 
 ```bash
-npm install whatsapp-business-api
+npm install @techliftdigital/whatsapp-business
 # or
-pnpm add whatsapp-business-api
+pnpm add @techliftdigital/whatsapp-business
 ```
 
 ## Usage
@@ -15,7 +17,7 @@ pnpm add whatsapp-business-api
 ### Initialization
 
 ```typescript
-import { WhatsAppBusiness } from 'whatsapp-business-api';
+import { WhatsAppBusiness } from '@techliftdigital/whatsapp-business';
 
 const whatsapp = new WhatsAppBusiness({
   accessToken: 'YOUR_ACCESS_TOKEN',
@@ -96,6 +98,15 @@ await whatsapp.requestOfficialBusinessAccount('PHONE_ID', { phone_number_id: 'PH
   - **Orders**: Request Address, Order Details (Review & Pay), Order Status.
 - **Management**: Flows, QR Codes, Templates (Create, Edit, Search), Analytics, Business Profile, Ice Breakers, Commands.
 - **BSP**: Credit Lines, OBA Requests (Green Tick), Embedded Signup Support.
+
+## Legal & Compliance
+
+By using this software, you agree to:
+1.  **Meta's Terms**: Comply with the [WhatsApp Business Terms of Service](https://www.whatsapp.com/legal/business-terms/) and [Meta Platform Terms](https://developers.facebook.com/terms).
+2.  **Opt-in Policy**: Only send messages to users who have explicitly opted in to receive them.
+3.  **Prohibited Content**: Adhere to the [WhatsApp Commerce Policy](https://www.whatsapp.com/legal/commerce-policy/).
+
+This library facilitates interaction with the Cloud API but cannot prevent misuse. The implementer is solely responsible for compliance.
 
 ## License
 
