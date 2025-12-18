@@ -1,1 +1,1 @@
-{ "compilerOptions": { "target": "es2016", "module": "commonjs", "outDir": "./dist", "strict": true, "esModuleInterop": true, "declaration": true } }
+{ "compilerOptions": { "target": "es2016", "module": "commonjs", "outDir": "./dist", "strict": true, "esModuleInterop": true, "declaration": true }, "include": ["src/**/*"], "exclude": ["test", "node_modules"] }

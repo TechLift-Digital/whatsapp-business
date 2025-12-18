@@ -6,7 +6,12 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:internal": "ts-node test/internal-test.ts",
+    "test:tech": "ts-node test/tech-provider-test.ts",
+    "test:msg": "ts-node test/messaging-test.ts",
+    "test:tpl": "ts-node test/template-flow-test.ts",
+    "test:interactive": "ts-node test/interactive-test.ts"
   },
   "description": "A comprehensive, strongly typed Node.js wrapper for the WhatsApp Business Cloud API. Supports Messaging (Text, Media, Templates), Webhooks, Automation, Flows, E-Commerce/Catalogs, QR Codes, and Analytics. Perfect for building chatbots and marketing automation tools.",
   "keywords": [
@@ -45,6 +50,7 @@
   "devDependencies": {
     "@types/form-data": "^2.5.2",
     "@types/node": "^25.0.3",
+    "dotenv": "^17.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }

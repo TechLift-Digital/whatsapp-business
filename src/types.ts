@@ -98,12 +98,14 @@ export interface InteractiveAction {
       description?: string;
     }[];
   }[];
+  name?: string;
+  parameters?: any; // Flexible parameters for flows, cta_url, etc.
 }
 
 export interface InteractiveMessage extends BaseMessage {
   type: 'interactive';
   interactive: {
-    type: 'button' | 'list' | 'product' | 'product_list' | 'catalog_message' | 'flow';
+    type: 'button' | 'list' | 'product' | 'product_list' | 'catalog_message' | 'flow' | 'cta_url' | 'address_message' | string;
     header?: {
       type: 'text' | 'image' | 'video' | 'document';
       text?: string;
